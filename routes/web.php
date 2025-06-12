@@ -7,9 +7,7 @@ use App\Http\Controllers\DocumentController;
 use App\Http\Controllers\ChatController;
 use App\Http\Controllers\Auth\RegisterGuruController; // Tambah ini!
 
-Route::get('/test-output', function() {
-    return 'HALO DUNIA!';
-});
+
 // Home -> Redirect ke dashboard
 Route::get('/', function () {
     return redirect()->route('dashboard');
