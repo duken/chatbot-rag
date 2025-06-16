@@ -87,9 +87,12 @@ EOT;
             ]);
 
         if (!$openaiResponse->successful()) {
+            // Ambil pesan error dari response OpenAI (jika ada)
+            $errDetail = $openaiResponse->json();
             return response()->json([
                 'answer' => '(OpenAI API error)',
                 'reply' => '(OpenAI API error)',
+                'error_detail' => $errDetail,
                 'question' => $pertanyaan,
                 'context_used' => $contexts,
             ], 500);

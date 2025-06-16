@@ -7,7 +7,6 @@ use App\Http\Controllers\DocumentController;
 use App\Http\Controllers\ChatController;
 use App\Http\Controllers\Auth\RegisterGuruController; // Tambah ini!
 
-
 // Home -> Redirect ke dashboard
 Route::get('/', function () {
     return redirect()->route('dashboard');
@@ -35,6 +34,11 @@ Route::post('/chat/ask', [ChatController::class, 'ask'])
     ->middleware(['auth'])
     ->name('chat.ask');
 
+// Penambahan berikut agar GET /chat/ask tidak error, tapi redirect ke halaman chat
+Route::get('/chat/ask', function () {
+    return redirect()->route('chat.index');
+});
+
 // Profile (opsional)
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
@@ -48,6 +52,5 @@ Route::post('/register', [RegisterGuruController::class, 'register']);
 Route::get('/debug-user', function () {
     return dd(Auth::user());
 });
-
 
 require __DIR__.'/auth.php';
