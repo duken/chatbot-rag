@@ -1,61 +1,77 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# Panduan Penggunaan siBolang
+**Asisten Digital Guru – Dinas Pendidikan Kabupaten Gorontalo Utara**
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+---
 
-## About Laravel
+## 1. Pendahuluan
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+Layanan administrasi dan informasi guru di Dinas Pendidikan Kabupaten Gorontalo Utara kini dipermudah dengan kehadiran **siBolang**.  
+Panduan ini bertujuan membantu guru dan tenaga kependidikan memahami, mendaftar, serta menggunakan siBolang secara optimal untuk kebutuhan informasi, administrasi, dan layanan pendidikan sehari-hari.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+---
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+## 2. Latar Belakang
 
-## Learning Laravel
+Transformasi digital di sektor pendidikan semakin penting dalam mendukung pelayanan yang cepat, transparan, dan efisien. Guru di Kabupaten Gorontalo Utara menghadapi berbagai tantangan:
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+- Informasi tentang tunjangan, administrasi, pelatihan, dan kebijakan terbaru sering tersebar di banyak dokumen atau grup chat sehingga sulit diakses secara terpusat.
+- Banyak pertanyaan yang sama diajukan berulang kali, sehingga operator dinas harus merespons secara manual dan sering terjadi antrean pertanyaan.
+- Tidak semua guru memiliki waktu dan kesempatan mengunjungi dinas secara langsung, terutama yang bertugas di daerah terpencil atau jauh dari ibukota kabupaten.
+- Update regulasi berlangsung dinamis dan belum ada sistem otomatis untuk memastikan semua guru selalu mendapat informasi terbaru secara serentak.
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+Untuk mengatasi tantangan tersebut, Dinas Pendidikan Gorontalo Utara menghadirkan **siBolang**, asisten digital berbasis Artificial Intelligence dan Retrieval Augmented Generation (RAG).  
+siBolang hadir agar guru bisa memperoleh jawaban yang cepat, akurat, berbasis dokumen resmi, dan dapat diakses di mana saja, kapan saja—sekaligus meringankan beban operator.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+---
 
-## Laravel Sponsors
+## 3. Mengenal siBolang
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+**siBolang** (Si roBot peLayan Guru) adalah chatbot layanan digital khusus untuk guru dan tenaga kependidikan di Kabupaten Gorontalo Utara.  
+siBolang menjawab pertanyaan tentang tunjangan, administrasi, pelatihan, dan pengembangan profesi **berdasarkan dokumen resmi Dinas Pendidikan**, lengkap dengan referensi sumber pada setiap jawaban.
 
-### Premium Partners
+---
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+## 4. Proses Registrasi dan Login
 
-## Contributing
+### a. Syarat Pendaftaran Akun
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+- Hanya **guru dan tenaga kependidikan** yang berada di bawah naungan **Dinas Pendidikan Kabupaten Gorontalo Utara** yang dapat mendaftar.
+- **NIK (Nomor Induk Kependudukan)** Anda **harus sudah didaftarkan oleh admin aplikasi** sebelum proses registrasi.
+- Pendaftaran dengan NIK yang tidak terdaftar di sistem **akan otomatis ditolak**.
 
-## Code of Conduct
+### b. Langkah-langkah Registrasi Akun
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+1. **Pastikan NIK Anda terdaftar.**  
+   Jika belum, silakan koordinasi dengan operator/admin sekolah untuk mengajukan data ke admin aplikasi.
+2. **Akses situs siBolang:** [https://sibolang.smart-x.id](https://sibolang.smart-x.id) di browser HP/laptop Anda.
+3. **Klik tombol “Daftar” atau “Registrasi”.**
+4. **Isi Formulir Registrasi**
+   - Masukkan NIK, Nama, Email, dan data lain yang diminta.
+   - Pastikan data sesuai dengan yang terdaftar pada admin aplikasi.
+5. **Login ke Aplikasi**
+   - Masukkan username/email dan password pada form login.
 
-## Security Vulnerabilities
+---
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+## 5. Cara Menggunakan siBolang
 
-## License
+### 5.1. Akses Chatbot
+- Setelah login, Anda akan diarahkan ke halaman utama siBolang.
+- Klik menu chatbot untuk memulai chat dengan bot.
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+### 5.2. Mulai Bertanya
+- Ketik pertanyaan pada kolom chat.
+  - Contoh:  
+    “Apa syarat tunjangan profesi tahun 2024?”
+
+### 5.3. Menerima Jawaban
+- siBolang membalas otomatis, lengkap dengan sumber dokumen.
+
+---
+
+## 6. Penutup
+
+**siBolang** adalah bentuk komitmen Dinas Pendidikan Kabupaten Gorontalo Utara dalam modernisasi layanan dan peningkatan kualitas pendidikan.  
+Pastikan Anda telah mendaftar sesuai ketentuan, dan manfaatkan siBolang sebagai sahabat digital dalam layanan pendidikan.
+
+---
